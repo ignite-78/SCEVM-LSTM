@@ -1,0 +1,263 @@
+2026-01-05 17:39:19,305 - Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.8.10 (default, Mar 18 2025, 20:04:55) [GCC 9.4.0]
+CUDA available: True
+CUDA_HOME: /usr
+NVCC: Cuda compilation tools, release 10.1, V10.1.243
+GPU 0: NVIDIA GeForce RTX 4090 D
+GCC: gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
+PyTorch: 2.1.0+cu118
+PyTorch compiling details: PyTorch built with:
+  - GCC 9.3
+  - C++ Version: 201703
+  - Intel(R) oneAPI Math Kernel Library Version 2022.2-Product Build 20220804 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v3.1.1 (Git Hash 64f6bcbcbab628e96f33a62c3e975f8535a7bde4)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX2
+  - CUDA Runtime 11.8
+  - NVCC architecture flags: -gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_90,code=sm_90
+  - CuDNN 8.9.2
+    - Built with CuDNN 8.7
+  - Magma 2.6.1
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.8, CUDNN_VERSION=8.7.0, CXX_COMPILER=/opt/rh/devtoolset-9/root/usr/bin/c++, CXX_FLAGS= -D_GLIBCXX_USE_CXX11_ABI=0 -fabi-version=11 -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOROCTRACER -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -O2 -fPIC -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-strict-overflow -Wno-strict-aliasing -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=old-style-cast -Wno-invalid-partial-specialization -Wno-unused-private-field -Wno-aligned-allocation-unavailable -Wno-missing-braces -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Werror=cast-function-type -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_DISABLE_GPU_ASSERTS=ON, TORCH_VERSION=2.1.0, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=1, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, 
+
+TorchVision: 0.16.0+cu118
+OpenCV: 4.9.0
+openstl: 0.3.0
+------------------------------------------------------------
+
+2026-01-05 17:39:19,888 - 
+device: 	cuda	
+dist: 	False	
+display_step: 	10	
+res_dir: 	work_dirs	
+ex_name: 	cikm_scevm_lstm	
+use_gpu: 	True	
+fp16: 	False	
+torchscript: 	False	
+seed: 	42	
+diff_seed: 	False	
+fps: 	False	
+empty_cache: 	True	
+find_unused_parameters: 	False	
+broadcast_buffers: 	False	
+resume_from: 	None	
+auto_resume: 	False	
+test: 	False	
+inference: 	False	
+deterministic: 	False	
+launcher: 	none	
+local_rank: 	0	
+port: 	29500	
+batch_size: 	2	
+val_batch_size: 	4	
+num_workers: 	4	
+data_root: 	./data/cikm_128	
+dataname: 	cikm	
+pre_seq_length: 	5	
+aft_seq_length: 	10	
+total_length: 	15	
+use_augment: 	False	
+use_prefetcher: 	False	
+drop_last: 	False	
+method: 	scevm_lstm	
+config_file: 	configs/cikm/scevm_lstm.py	
+model_type: 	None	
+drop: 	0.0	
+drop_path: 	0.0	
+overwrite: 	False	
+epoch: 	50	
+log_step: 	1	
+opt: 	adam	
+opt_eps: 	None	
+opt_betas: 	None	
+momentum: 	0.9	
+weight_decay: 	0.0	
+clip_grad: 	None	
+clip_mode: 	norm	
+early_stop_epoch: 	30	
+no_display_method_info: 	False	
+sched: 	onecycle	
+lr: 	0.0001	
+lr_k_decay: 	1.0	
+warmup_lr: 	1e-05	
+min_lr: 	1e-06	
+final_div_factor: 	10000.0	
+warmup_epoch: 	0	
+decay_epoch: 	100	
+decay_rate: 	0.1	
+filter_bias_and_bn: 	False	
+reverse_scheduled_sampling: 	0	
+r_sampling_step_1: 	25000	
+r_sampling_step_2: 	50000	
+r_exp_alpha: 	5000	
+scheduled_sampling: 	1	
+sampling_stop_iter: 	50000	
+sampling_start_value: 	1.0	
+sampling_changing_rate: 	2e-05	
+num_hidden: 	128,128,128,128	
+filter_size: 	5	
+stride: 	1	
+patch_size: 	2	
+layer_norm: 	0	
+in_shape: 	[5, 1, 128, 128]	
+data_name: 	cikm	
+metrics: 	['mse', 'mae', 'ssim', 'psnr']	
+2026-01-05 17:39:25,084 - Model info:
+scevm_lstm_Model(
+  (MSE_criterion): MSELoss()
+  (cell_list): ModuleList(
+    (0): SpatioTemporalLSTMCell(
+      (scema): SCEMA(
+        (sc_conv): ScConv(
+          (SRU): SRU(
+            (gn): GroupBatchnorm2d()
+            (sigomid): Sigmoid()
+          )
+          (CRU): CRU(
+            (squeeze1): Conv2d(66, 33, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (squeeze2): Conv2d(66, 33, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (GWC): Conv2d(33, 132, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (PWC1): Conv2d(33, 132, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (PWC2): Conv2d(33, 99, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (advavg): AdaptiveAvgPool2d(output_size=1)
+          )
+        )
+        (ema): EMA(
+          (gn): GroupNorm(6, 132, eps=1e-05, affine=True)
+          (softmax): Softmax(dim=-1)
+          (agp): AdaptiveAvgPool2d(output_size=(1, 1))
+          (pool_h): AdaptiveAvgPool2d(output_size=(None, 1))
+          (pool_w): AdaptiveAvgPool2d(output_size=(1, None))
+          (conv1x1): Conv2d(22, 22, kernel_size=(1, 1), stride=(1, 1))
+          (conv3x3): Conv2d(22, 22, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        )
+      )
+      (vss_blocks): ModuleList(
+        (0): VSB(
+          (ln_1): LayerNorm((132,), eps=1e-06, elementwise_affine=True)
+          (drop_path): Dropout(p=0.1, inplace=False)
+          (vss_block): VSSBlock(
+            (ln_1): LayerNorm((132,), eps=1e-06, elementwise_affine=True)
+            (self_attention): SS2D(
+              (in_proj): Linear(in_features=132, out_features=528, bias=False)
+              (conv2d): Conv2d(264, 264, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=264)
+              (act): SiLU()
+              (out_norm): LayerNorm((264,), eps=1e-05, elementwise_affine=True)
+              (out_proj): Linear(in_features=264, out_features=132, bias=False)
+            )
+            (drop_path): timm.DropPath(0.1)
+          )
+          (tanh_proj): Linear(in_features=132, out_features=132, bias=True)
+          (sigmoid_proj): Linear(in_features=132, out_features=132, bias=True)
+        )
+      )
+      (vsb_state_proj): Conv2d(132, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv_x): Conv2d(4, 896, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+      (conv_h): Conv2d(128, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+      (conv_m): Conv2d(128, 384, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+      (conv_o): Conv2d(256, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+      (conv_last): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    )
+    (1-3): 3 x SpatioTemporalLSTMCell(
+      (scema): SCEMA(
+        (sc_conv): ScConv(
+          (SRU): SRU(
+            (gn): GroupBatchnorm2d()
+            (sigomid): Sigmoid()
+          )
+          (CRU): CRU(
+            (squeeze1): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (squeeze2): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (GWC): Conv2d(64, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=2)
+            (PWC1): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (PWC2): Conv2d(64, 192, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (advavg): AdaptiveAvgPool2d(output_size=1)
+          )
+        )
+        (ema): EMA(
+          (gn): GroupNorm(8, 256, eps=1e-05, affine=True)
+          (softmax): Softmax(dim=-1)
+          (agp): AdaptiveAvgPool2d(output_size=(1, 1))
+          (pool_h): AdaptiveAvgPool2d(output_size=(None, 1))
+          (pool_w): AdaptiveAvgPool2d(output_size=(1, None))
+          (conv1x1): Conv2d(32, 32, kernel_size=(1, 1), stride=(1, 1))
+          (conv3x3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        )
+      )
+      (vss_blocks): ModuleList(
+        (0): VSB(
+          (ln_1): LayerNorm((256,), eps=1e-06, elementwise_affine=True)
+          (drop_path): Dropout(p=0.1, inplace=False)
+          (vss_block): VSSBlock(
+            (ln_1): LayerNorm((256,), eps=1e-06, elementwise_affine=True)
+            (self_attention): SS2D(
+              (in_proj): Linear(in_features=256, out_features=1024, bias=False)
+              (conv2d): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=512)
+              (act): SiLU()
+              (out_norm): LayerNorm((512,), eps=1e-05, elementwise_affine=True)
+              (out_proj): Linear(in_features=512, out_features=256, bias=False)
+            )
+            (drop_path): timm.DropPath(0.1)
+          )
+          (tanh_proj): Linear(in_features=256, out_features=256, bias=True)
+          (sigmoid_proj): Linear(in_features=256, out_features=256, bias=True)
+        )
+      )
+      (vsb_state_proj): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv_x): Conv2d(128, 896, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+      (conv_h): Conv2d(128, 512, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+      (conv_m): Conv2d(128, 384, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+      (conv_o): Conv2d(256, 128, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)
+      (conv_last): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    )
+  )
+  (conv_last): Conv2d(128, 4, kernel_size=(1, 1), stride=(1, 1), bias=False)
+)
+| module                        | #parameters or shape   | #flops     |
+|:------------------------------|:-----------------------|:-----------|
+| model                         | 26.446M                | 1.529T     |
+|  cell_list                    |  26.446M               |  1.529T    |
+|   cell_list.0                 |   4.098M               |   0.236T   |
+|    cell_list.0.scema          |    56.727K             |    4.537G  |
+|    cell_list.0.vss_blocks.0   |    0.215M              |    11.309G |
+|    cell_list.0.vsb_state_proj |    16.896K             |    1.938G  |
+|    cell_list.0.conv_x         |    89.6K               |    5.138G  |
+|    cell_list.0.conv_h         |    1.638M              |    93.952G |
+|    cell_list.0.conv_m         |    1.229M              |    70.464G |
+|    cell_list.0.conv_o         |    0.819M              |    46.976G |
+|    cell_list.0.conv_last      |    32.768K             |    1.879G  |
+|   cell_list.1                 |   7.449M               |   0.431T   |
+|    cell_list.1.scema          |    0.13M               |    11.245G |
+|    cell_list.1.vss_blocks.0   |    0.7M                |    38.139G |
+|    cell_list.1.vsb_state_proj |    32.768K             |    3.758G  |
+|    cell_list.1.conv_x         |    2.867M              |    0.164T  |
+|    cell_list.1.conv_h         |    1.638M              |    93.952G |
+|    cell_list.1.conv_m         |    1.229M              |    70.464G |
+|    cell_list.1.conv_o         |    0.819M              |    46.976G |
+|    cell_list.1.conv_last      |    32.768K             |    1.879G  |
+|   cell_list.2                 |   7.449M               |   0.431T   |
+|    cell_list.2.scema          |    0.13M               |    11.245G |
+|    cell_list.2.vss_blocks.0   |    0.7M                |    38.139G |
+|    cell_list.2.vsb_state_proj |    32.768K             |    3.758G  |
+|    cell_list.2.conv_x         |    2.867M              |    0.164T  |
+|    cell_list.2.conv_h         |    1.638M              |    93.952G |
+|    cell_list.2.conv_m         |    1.229M              |    70.464G |
+|    cell_list.2.conv_o         |    0.819M              |    46.976G |
+|    cell_list.2.conv_last      |    32.768K             |    1.879G  |
+|   cell_list.3                 |   7.449M               |   0.431T   |
+|    cell_list.3.scema          |    0.13M               |    11.245G |
+|    cell_list.3.vss_blocks.0   |    0.7M                |    38.139G |
+|    cell_list.3.vsb_state_proj |    32.768K             |    3.758G  |
+|    cell_list.3.conv_x         |    2.867M              |    0.164T  |
+|    cell_list.3.conv_h         |    1.638M              |    93.952G |
+|    cell_list.3.conv_m         |    1.229M              |    70.464G |
+|    cell_list.3.conv_o         |    0.819M              |    46.976G |
+|    cell_list.3.conv_last      |    32.768K             |    1.879G  |
+|  conv_last                    |  0.512K                |  29.36M    |
+|   conv_last.weight            |   (4, 128, 1, 1)       |            |
+--------------------------------------------------------------------------------
+
