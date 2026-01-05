@@ -6,7 +6,7 @@ Official repository for SCEVM-LSTM: Synergizing vision mamba and spatial channel
 
 ## Introduction
 
-we propose an innovative spatiotemporal long short-term memory model (SCEVM-LSTM), which merges Vision Mamba blocks with spatial and channel reconstruction convolutional modules incorporating efficient multi-scale attention (SCEMA). The experiments demonstrate that this model significantly enhances the prediction capability for high echoes and better captures long-term trends in precipitation systems, thereby improving the model's performance under extended time steps.
+We propose an innovative spatiotemporal long short-term memory model (SCEVM-LSTM), which merges Vision Mamba blocks with spatial and channel reconstruction convolutional modules incorporating efficient multi-scale attention (SCEMA). The experiments demonstrate that this model significantly enhances the prediction capability for high echoes and better captures long-term trends in precipitation systems, thereby improving the model's performance under extended time steps.
 
 ## Installation
 
